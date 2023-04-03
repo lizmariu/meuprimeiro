@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<form action="login.php" method="POST">
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username">
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password">
+		<button type="submit">Login</button>
+	</form>
+
+	<script>
+		// Espera o formulário ser enviado
+		document.querySelector('form').addEventListener('submit', function(e) {
+			e.preventDefault(); // Previne o envio padrão do formulário
+
+			// Recupera as credenciais do usuário
+			var username = document.querySelector('#username').value;
+			var password = document.querySelector('#password').value;
+
+			// Verifica as credenciais do usuário (exemplo simples)
+			if (username === 'user' && password === '123') {
+				// Redireciona para a página de boas-vindas
+				window.location.href = 'welcome.html';
+			} else {
+				alert('Credenciais inválidas.');
+			}
+		});
+	</script>
+</body>
+</html>

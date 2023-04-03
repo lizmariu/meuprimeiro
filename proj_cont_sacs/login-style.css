@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(42, 39, 39, 0.974);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#titulo{
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;   
+}
+
+#infos{
+    color:rgba(42, 39, 39, 0.974);
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: aliceblue;
+    width: 300px;
+    border-radius: 30px;
+    margin:auto;
+    line-height: 25px;
+}
+
+input{
+    text-align: center;
+    color: rgb(172, 172, 172);
+}
